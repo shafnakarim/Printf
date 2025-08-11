@@ -6,7 +6,7 @@
 /*   By: srayees <srayees@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 14:43:22 by srayees           #+#    #+#             */
-/*   Updated: 2025/08/08 16:27:31 by srayees          ###   ########.fr       */
+/*   Updated: 2025/08/11 11:23:59 by srayees          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_print_hex(unsigned int n, int uppercase)
 		return (-1);
 	len += temp;
 	if (write(1, &hex[n % 16], 1) == -1)
-	return (-1);
+		return (-1);
 	len += 1;
 	return (len);
 }
